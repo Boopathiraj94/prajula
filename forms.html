@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+
+    <style>
+        input[type="text"]:focus {
+            background: darkkhaki;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- 
+ method => get
+ method => post
+ 
+ 
+-->
+
+    <fieldset>
+        <legend>Student Details</legend>
+
+       
+
+            <!-- <label for="ename">Enter your Name?</label>
+            <input type="text" name="name" id="ename" placeholder="Enter your Name"> <br>
+            <label for="fname">Enter your Father Name?</label>
+            <input type="text" name="fathername" id="fname"> <br>
+            <label for="">Choose your Gender</label> -->
+            <!-- only one option -->
+            <!-- <input type="radio" name="gender" value="male"> Male
+            <input type="radio" name="gender" value="female"> Female <br> -->
+            <!-- checkbox -->
+            <!-- one or more options -->
+
+            <!-- <label for="">Choose your course ?</label> <br>
+
+            <input type="checkbox" value="Java"> Java
+            <input type="checkbox" value="python"> python
+            <input type="checkbox" value="C"> C
+            <input type="checkbox" value="C++"> C++
+            <input type="checkbox" value="Adv . Java"> Adv . Java
+
+
+
+            <br>
+
+            <input type="email"> <br>
+            <input type="number"> <br>
+
+            <fieldset style="background: lightcoral;">
+                <legend>Date Details</legend>
+
+                <input type="date"> <br>
+                <input type="time"> <br>
+                <input type="datetime-local"> <br>
+
+                <input type="month"> <br>
+
+                <input type="week"> <br>
+            </fieldset>
+            <input type="color"> <br>
+
+            <input type="url"> <br>
+
+            <input type="search"> <br>
+
+            <textarea name="" id="" rows="3" cols="10"></textarea> <br> -->
+
+            <!-- multiline input
+         cols=> no of letters / charactor
+         rows => no of rows 
+        -->
+            <!--  multiple size="4" -->
+            <!-- <select name="" id="" placeholder="Choose option">
+                <option value="">Please select</option>
+                <optgroup label="Basics">
+                    <option value="Java">Java</option>
+                    <option value="C">C</option>
+                    <option value="C++">C++</option>
+                    <option value="Python">Python</option>
+                </optgroup>
+
+                <optgroup label="Adv">
+                    <option value="Adv.Java">Adv.Java</option>
+                    <option value="Adv.python">Adv.python</option>
+                </optgroup>
+            </select>
+
+
+
+
+
+            <br> -->
+
+
+
+
+            <!-- single line input -->
+
+ <form action="" method=""> 
+            <input type="text" placeholder="Enter Name" maxlength="10" name="fname" disabled value="raja"> <br>
+
+            <!-- 
+             disabled => it is not send to the server
+            
+            -->
+
+            <input type="text" name="fathername" placeholder="Enter Father"  maxlength="10"> <br>
+           
+            <input type="text" name="district" readonly value="trichy"> 
+
+            <br>
+
+            <!-- 
+            min,max
+            number
+            date 
+        -->
+            <input type="number" name="age" min="18" max="100"> <br>
+
+            <!-- 
+            YYYY-mm-dd
+            
+            
+            -->
+            <input type="date" name="bdate" value="2025-06-02" 
+             min="2025-06-15" max="2025-06-25"> <br>
+
+             <input type="range">
+
+             <output >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto vel sed animi, consequuntur facere voluptatem voluptatum, at tenetur perspiciatis adipisci sapiente iste non. Officia facilis aspernatur perferendis hic distinctio pariatur?</output>
+
+            <button type="submit" >Submit</button>
+            <!-- <button type="button">go</button> -->
+
+            <!-- <input type="submit" value="raja"> -->
+            <!-- <input type="button" name="" value="Normal"> -->
+        </form>
+
+    </fieldset>
+
+</body>
+
+</html>
