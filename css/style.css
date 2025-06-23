@@ -1,0 +1,111 @@
+
+*{
+    background: pink;
+}
+/* 
+h1{
+    background: darkblue;
+}
+
+#ff{
+    background-color: darkgreen;
+} */
+/* 
+
+element selectors
+*/
+/* p{
+    color: white;
+    background: black;
+} */
+
+/* class selectors */
+
+/* .bgclr{
+    background: pink;
+}
+
+.center{
+    text-align: center;
+}
+
+.txt-red{
+    color: red;
+} */
+
+
+/* 
+!important
+inline
+id
+class
+element selector
+* - universal
+*/
+
+/* attribute selector */
+
+/* a[href],p[href]{
+    color: darkgreen;
+}
+
+a[href*="google"]{
+    background-color: darkblue;
+    color: red;
+} */
+ 
+/* a[href^="https"]{
+    background-color: darkmagenta;
+    color: gold;
+}
+
+a[href$="html"]{
+    background-color: darkmagenta;
+    color: gold;
+}
+
+a[class~="hhh"]{
+    background-color: darkolivegreen;
+} */
+
+p{
+    /* color: red; */
+}
+
+/*  descendant space */
+/* div p{  
+  color: green;
+} */
+
+/* div>p{
+    color: red;
+}
+
+div~p{
+    color: darkorange;
+} */
+
+/* h1~p{
+    background-color: darkgoldenrod;
+} */
+/* 
+h1+p{
+    background-color: darkgoldenrod;
+} */
+
+
+h1{
+    /* color: red; */
+    /* color: rgb(22, 90, 157); */
+    /* background-color: rgba(22, 90, 157, 0.288); */
+    background-color: #852108;
+    opacity: 0.5;
+}
+
+img{
+    opacity: 0.3;
+}
+
+img:hover{
+    opacity: 1;
+}
