@@ -1,0 +1,75 @@
+Gradient-colors
+CSS gradients let you display smooth transitions between two or more specified colors.
+CSS defines three types of gradients:
+•	Linear Gradients (goes down/up/left/right/diagonally)
+•	Radial Gradients (defined by their center)
+•	Conic Gradients (rotated around a center point)
+background-image: linear-gradient(direction, color-stop1, color-stop2, ...);
+Direction - Top to Bottom (this is default)
+background-image: linear-gradient(to right, red , yellow);
+Direction - Diagonal
+You can make a gradient diagonally by specifying both the horizontal and vertical starting positions.
+Syntax
+background-image: linear-gradient(angle, color-stop1, color-stop2);
+background-image: linear-gradient(red 10%, yellow, green);
+ background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+background-image: repeating-linear-gradient(red, yellow 10%, green 20%);
+
+CSS Radial Gradients
+A radial gradient is defined by its center.
+To create a radial gradient you must also define at least two color stops.
+Syntax
+background-image: radial-gradient(shape size at position, start-color, ..., last-color);
+background-image: radial-gradient(closest-side at 60% 55%, red, yellow, black); x –axis y- axis
+background-image: radial-gradient(farthest-side at 60% 55%, red, yellow, black);
+background-image: radial-gradient(closest-corner at 60% 55%, red, yellow, black);
+background-image: radial-gradient(farthest-corner at 60% 55%, red, yellow, black);
+background-image: repeating-radial-gradient(red, yellow 10%, green 15%);
+CSS Conic Gradients
+A conic gradient is a gradient with color transitions rotated around a center point.
+To create a conic gradient you must define at least two colors.
+Syntax
+background-image: conic-gradient([from angle] [at position,] color [degree], color [degree], ...);
+By default, angle is 0deg and position is center.
+If no degree is specified, the colors will be spread equally around the center point.
+ background-image: conic-gradient(red, yellow, green);
+ background-image: conic-gradient(red, yellow, green, blue, black);
+background-image: conic-gradient(red 45deg, yellow 90deg, green 210deg);
+background-image: conic-gradient(red, yellow, green, blue, black);
+  border-radius: 50%;
+
+ background-image: conic-gradient(red 0deg, red 90deg, yellow 90deg, yellow 180deg, green 180deg, green 270deg, blue 270deg);
+  border-radius: 50%;
+background-image: conic-gradient(from 90deg, red, yellow, green);
+
+background-image: conic-gradient(at 60% 45%, red, yellow, green);
+background-image: repeating-conic-gradient(red 10%, yellow 20%);
+  border-radius: 50%;
+
+The background-blend-mode Property defines how the element's background image should blend with each other and with the element's background-color. 
+
+background-blend-mode: normal|multiply|screen|darken|lighten|
+color-dodge|saturation|difference|luminosity|overlay;
+
+
+
+CSS Units (Sizing concepts)
+CSS has several different units for expressing a length.
+CSS properties take "length" values, such as width, margin, padding, font-size, etc.
+There are two types of length units: absolute and relative.
+Absolute Units
+The absolute length units are fixed
+1.	Cm – centimetres, 
+2.	mm - millimetres, 
+3.	in -  inches (1in = 96px = 2.54cm) 
+4.	px * pixels (1px = 1/96th of 1in) 
+5.	pt points (1pt = 1/72 of 1in)
+6.	pc picas (1pc = 12 pt) 
+Relative Units
+7.	Em - 		Relative to the Parent Element
+8.	Rem - 		Relative to the root element r=> root element
+9.	Vw	- 	Relative to the width of the viewport*
+10.	Vh - 		Relative to 1% of the height of the viewport*
+11.	Vmin - 	Relative to 1% of viewport's* smaller dimension
+12.	Vmax - 	Relative to 1% of viewport's* larger dimension
+13.	% - 		Relative to the parent element
