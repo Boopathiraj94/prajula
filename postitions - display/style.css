@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* .card{
+    border:2px solid red;
+    width: 250px;
+    line-height: 1.5;
+    text-align: center;
+    display: inline-block;
+    padding: 10px;
+    margin: 20px; */
+    /* display: none; */
+    /* visibility: hidden; */
+/* } */
+/* 
+.card>img{
+    width: inherit;
+}
+
+h1{
+    display: inline;
+    width: 200px;
+    border: 2px solid;
+} */
+
+/* a{
+    background: darkcyan;
+    padding: 8px 15px;
+    /* border: 2px solid red;  
+} */
+/* .container{
+     text-align: center;
+} */
+
+.box1{
+    border: 2px solid;
+    width: 200px;
+    height: 20px;
+    /* position: static; */
+    /* left: 300px; */
+
+    position: relative;
+    /* left:50px; */
+    /* top:50px; */
+    right:-20px;
+    bottom: -20px;
+    /* margin: 30px; */
+     
+}
+
+.box1:hover{
+    position: relative;
+    left: 0;
+    
+   
+}
+
+.box2{
+    /* position: absolute; */
+    position: fixed;
+    border: 2px solid red;
+    /* right: 0; */
+    left: 0;
+    bottom: 0;
+    width: 200px;
+    height: 20px;
+    background: darkcyan;
+    color: white;
+}
+
+#h1{
+    position: absolute;
+    top:0;
+    right: 0;
+}
+#h2{
+    position: absolute;
+    top: 25px;
+    right: 0;
+}
+
+#h3{
+    position: absolute;
+    top:15%;
+    right: 0;
+
+}
+
+header{
+    border: 2px solid;
+    text-align: center;
+    padding: 20px;
+    background: darkolivegreen;
+    /* position: fixed;
+    width: 100%; */
+
+    position: sticky;
+    /* top: 10px; */
+}
