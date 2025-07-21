@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .outter{
+            border:2px solid ;
+            height: 50vh;
+            position: relative;
+        }
+
+        .outter>.in-box1{
+            border: 2px solid red;
+            width: 100px;
+            height: 100px;
+            background: #dc1919;
+            position: absolute;
+            bottom: 0;
+            z-index: 1;
+        }
+
+        .outter>.in-box2{
+            border: 2px solid red;
+            width: 100px;
+            height: 100px;
+            background: #119d4c;
+            position: absolute;
+            bottom: 30px;
+            /* z-index: -1; */
+            /* right: 5%;  */
+            left: 30px;
+            z-index: 0;
+        }
+
+        .outter>.in-box3{
+            border: 2px solid red;
+            width: 100px;
+            height: 100px;
+            background: #0f2479;
+            position: absolute;
+            bottom: 45px;
+            z-index: -1;
+            /* right: 5%;  */
+            left: 45px;
+        }
+
+        /* 
+         z-index: -1
+         z-index: 0, 1,2,3,4,5.....999999
+        
+        */
+    </style>
+</head>
+<body>
+
+
+    <section class="outter">
+         <div class="in-box1">
+            1
+         </div>
+
+           <div class="in-box2">
+            2
+         </div>
+          <div class="in-box3">
+            3
+         </div>
+    </section>
+
+    
+</body>
+</html>
