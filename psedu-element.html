@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 
+ selector::pseudo-ele{
+        //
+    }    
+-->
+    <style>
+        /* h1::first-letter{
+                color: pink;
+                background: darkgreen;
+                font-family: cursive;
+                font-size: 55px;
+                
+            }
+            span{
+                 color: pink;
+                background: darkgreen;
+                font-family: cursive;
+                font-size: 55px;
+            }
+
+            h1:nth-child(5){
+                color: green;
+            }
+
+            p::first-line{
+                color: teal;
+            }
+
+            h2::before{
+                content: "k.";
+                color: yellowgreen;
+                background: darkgoldenrod;
+            }
+
+            h2::after{
+                 content: "bye";
+                color: yellowgreen;
+                background: darkgoldenrod;
+            } */
+
+
+        /* li::marker{
+                /* content: url(pexels-anjana-c-169994-674010.jpg); */
+        /* background: darkblue;  
+                color: blue;
+              }
+
+              p::selection{
+                background: darkgoldenrod;
+                color: white;
+              } */
+    </style>
+</head>
+
+<body>
+    <!-- CSS Pseudo-elements -->
+
+    <!-- 
+    <h1>Pra<span>J</span>ula</h1> 
+
+    <h2>SIva</h2>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis consequatur optio alias quod voluptas perspiciatis incidunt? Obcaecati delectus ipsa quis aut, dolorum dolor, provident exercitationem laborum sunt esse sit ut.</p>
+
+    <ul>
+        <li>sdf</li>
+        <li>df</li>
+        <li>dff</li>
+        <li>dd</li>
+        <li>dsf</li>
+    </ul> -->
+
+    <style>
+        h1 {
+            text-align: center;
+            background: linear-gradient(to right, #066388, #620c93);
+        }
+
+        h1::after,
+        h1::before {
+            content: "";
+            width: 10px;
+            height: 10px;
+            /* border: 2px solid red; */
+            display: block;
+            /* position:absolute; */
+            background: linear-gradient(to right, red, green);
+            transition: 2s;
+            margin: 0 auto;
+        }
+
+        h1:hover::after,
+        h1:hover::before {
+            width: 100px;
+            background: linear-gradient(to right, #066388, #620c93);
+            transition: 2s;
+        }
+
+        /* unvisited */
+        a:link {
+            color: palevioletred;
+        }
+
+        /* visited */
+        a:visited {
+            color: darkgoldenrod;
+        }
+
+        a:active {
+            color: black;
+        }
+
+        div:first-child {
+            color: #066388;
+            background: #620c93;
+        }
+
+        #gender:checked {
+            background: darkgoldenrod;
+            box-shadow: 2px 2px 1px black;
+        }
+
+        .mandatory:required {
+            background: #00eaff;
+            border: 2px dotted red;
+            color: red;
+            border-radius: 20px;
+        }
+
+        .optional:optional {
+            background: green;
+            border-radius: 250px/150px;
+        }
+    </style>
+
+    <h1>Prajula</h1>
+
+    <a href="">Home</a>
+    <section>
+        <div>
+            <h1>welcome1</h1>
+            <p>welcome2</p>
+            <p>welcome3</p>
+
+        </div>
+    </section>
+    <section>
+        <p>welcome7</p>
+        <p>welcome8</p>
+        <p>welcome9</p>
+
+    </section>
+
+    <section>
+        <p>welcome10</p>
+    </section>
+
+    <input type="checkbox" id="gender" checked>Male
+
+    <input type="checkbox" id="gender">Male
+    <input type="checkbox" id="gender" checked>Male
+    <br>
+    <input type="text" class="mandatory" placeholder="name" required>
+    <input type="text" class="mandatory" placeholder="age" required>
+    <input type="text" class="optional" placeholder="city">
+
+
+    <span style="cursor: auto">auto</span><br>
+    <span style="cursor: crosshair">crosshair</span><br>
+    <span style="cursor: default">default</span><br>
+    <span style="cursor: e-resize">e-resize</span><br>
+    <span style="cursor: help">help</span><br>
+    <span style="cursor: move">move</span><br>
+    <span style="cursor: n-resize">n-resize</span><br>
+    <span style="cursor: ne-resize">ne-resize</span><br>
+    <span style="cursor: nw-resize">nw-resize</span><br>
+    <span style="cursor: pointer">pointer</span><br>
+    <span style="cursor: progress">progress</span><br>
+    <span style="cursor: s-resize">s-resize</span><br>
+    <span style="cursor: se-resize">se-resize</span><br>
+    <span style="cursor: sw-resize">sw-resize</span><br>
+    <span style="cursor: text">text</span><br>
+    <span style="cursor: w-resize">w-resize</span><br>
+    <span style="cursor: wait">wait</span>
+
+    <style>
+        li {
+            list-style-type: circle;
+            list-style-type: decimal;
+            list-style-type: lower-alpha;
+            list-style-type: lower-greek;
+            list-style-type: lower-latin;
+            list-style-type: lower-roman;
+            list-style-type: armenian;
+            list-style-type: none;
+            list-style-position: outside;
+            list-style-position: inside;
+
+        }
+
+        li::marker {
+            content: "🥘";
+        }
+
+        ul {
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+
+    <ul>
+        <li>tea</li>
+        <li>coffee</li>
+        <li>orange</li>
+        <li>apple</li>
+        <li>gogo</li>
+    </ul>
+
+</body>
+
+</html>
