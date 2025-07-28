@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            /* transform: translateX(200px);   */
+        }
+
+        h1 {
+            border: 2px solid;
+            /* height: 60vh; */
+            width: 200px;
+            /* animation-name: left-right;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-delay: 1s;
+            animation-timing-function: ease-in;
+            animation-direction: alternate-reverse;
+            animation-play-state: running; */
+            animation: left-right 3s 0.4s alternate linear infinite ;
+        }
+
+        h1:hover{
+            animation-play-state: paused;
+        }
+
+        /* 
+            from -to
+
+            0-100%
+
+        */
+        div{
+            perspective: 500px;
+        }
+        @keyframes left-right {
+
+            /* from{
+                transform: translateX(200px);
+            }
+            to{
+                transform: translateY(200px);
+            } */
+            0% {
+                transform: translateX(200px) ;
+            }
+
+            20% {
+                /* transform: rotate(50deg); */
+              
+            }
+
+            50% {
+                /* transform: rotate(360deg); */
+                transform: scale(1.2,1.2);
+            }
+
+            100% {
+                /* transform: translateZ(600px); */
+                  background-color: darkblue;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <!-- <marquee behavior="alternate" direction="" scrollamount="40"> -->
+    <div>
+        <h1>Prajula</h1>
+    </div>
+    <!-- </marquee> -->
+
+</body>
+
+</html>

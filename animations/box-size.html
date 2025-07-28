@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .card {
+            border: 2px solid;
+            width: 300px;
+            border-radius: 2rem/5rem;
+            box-shadow: 5px 13px 14px 10px #5d1717c4;
+        }
+
+        .card-header {
+            /* border:2px solid; */
+            overflow: hidden;
+            height: 150px;
+            border-radius: inherit;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+            position: relative;
+        }
+
+        .card-header>span{
+            position: absolute;
+            z-index: 1;
+            background: red;
+            left: 20px;
+            top: 20px;
+            border-radius: 50%;
+            padding: 10px;
+        }
+
+        .card-header img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: 2s;
+            border-radius: inherit;
+            position: absolute;
+            /* border-bottom-left-radius: 0; */
+        }
+
+        .card-header img:hover {
+            transform: scale(1.2, 1.2) translateX(300px);
+            /* opacity: 0.4; */
+            transition: 2s;
+        }
+
+        .card-footer {
+            text-align: center;
+            /* border: 2px solid green; */
+            padding: 10px 0;
+        }
+
+        .card-footer>button {
+            background: darkcyan;
+            padding: 5px 18px;
+            border-radius: 20px/50px;
+            color: white;
+        }
+
+        section {
+            display: flex;
+            border: 2px solid red;
+            padding: 2rem;
+            flex-wrap: wrap;
+            gap: 20px;
+             justify-content: center;
+           /* justify-content: end;
+            justify-content: flex-start;
+            justify-content: space-around;
+            justify-content: space-evenly;
+            justify-content: space-between; */
+        }
+
+        header {
+            background: pink;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            /* text-align: center; */
+        }
+
+        ul {
+            /* border: 2px solid; */
+            align-self: center;
+        }
+
+        ul>li {
+            display: inline;
+            margin-right: 30px;
+        }
+
+        ul>li>a {
+            text-decoration: none;
+            color: white;
+
+        }
+
+        header img {
+            width: 80px;
+            border: 2px solid;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+        flex
+
+        container => parent element
+        child => flex items
+     section => container
+     div -> flex items
+    -->
+
+    <header>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Superman_shield.svg/640px-Superman_shield.svg.png"
+            alt="">
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Service</a></li>
+        </ul>
+    </header>
+
+    <section>
+        <div class="card" data-id="1">
+            <div class="card-header">
+                <img src="https://letsenhance.io/static/73136da51c245e80edc6ccfe44888a99/396e9/MainBefore.jpg" alt="">
+                <span>20%</span>
+            </div>
+            <div class="card-footer">
+                <p>I am Product</p>
+                <p>$300</p>
+                <button>PayNow</button>
+            </div>
+        </div>
+
+        <div class="card" data-id="1">
+            <div class="card-header">
+                <img src="https://letsenhance.io/static/73136da51c245e80edc6ccfe44888a99/396e9/MainBefore.jpg" alt="">
+            </div>
+            <div class="card-footer">
+                <p>I am Product</p>
+                <p>$300</p>
+                <button>PayNow</button>
+            </div>
+        </div>
+
+        <div class="card" data-id="1">
+            <div class="card-header">
+                <img src="https://letsenhance.io/static/73136da51c245e80edc6ccfe44888a99/396e9/MainBefore.jpg" alt="">
+            </div>
+            <div class="card-footer">
+                <p>I am Product</p>
+                <p>$300</p>
+                <button>PayNow</button>
+            </div>
+        </div>
+        <div class="card" data-id="1">
+            <div class="card-header">
+                <img src="https://letsenhance.io/static/73136da51c245e80edc6ccfe44888a99/396e9/MainBefore.jpg" alt="">
+            </div>
+            <div class="card-footer">
+                <p>I am Product</p>
+                <p>$300</p>
+                <button>PayNow</button>
+            </div>
+        </div>
+        <div class="card" data-id="1">
+            <div class="card-header">
+                <img src="https://letsenhance.io/static/73136da51c245e80edc6ccfe44888a99/396e9/MainBefore.jpg" alt="">
+            </div>
+            <div class="card-footer">
+                <p>I am Product</p>
+                <p>$300</p>
+                <button>PayNow</button>
+            </div>
+        </div>
+        <div class="card" data-id="1">
+            <div class="card-header">
+                <img src="https://letsenhance.io/static/73136da51c245e80edc6ccfe44888a99/396e9/MainBefore.jpg" alt="">
+            </div>
+            <div class="card-footer">
+                <p>I am Product</p>
+                <p>$300</p>
+                <button>PayNow</button>
+            </div>
+        </div>
+        <!-- <div class="card" data-id="2">
+            <img src="https://letsenhance.io/static/73136da51c245e80edc6ccfe44888a99/396e9/MainBefore.jpg" alt="">
+        </div>
+        <div class="card" data-id="3">
+            <img src="https://letsenhance.io/static/73136da51c245e80edc6ccfe44888a99/396e9/MainBefore.jpg" alt="">
+        </div> -->
+    </section>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error commodi quia repellat laudantium distinctio
+        voluptates, incidunt dolor aliquid provident, qui illum minima eligendi dicta enim totam ea quisquam possimus
+        nulla.</p>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error commodi quia repellat laudantium distinctio
+        voluptates, incidunt dolor aliquid provident, qui illum minima eligendi dicta enim totam ea quisquam possimus
+        nulla.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error commodi quia repellat laudantium distinctio
+        voluptates, incidunt dolor aliquid provident, qui illum minima eligendi dicta enim totam ea quisquam possimus
+        nulla.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error commodi quia repellat laudantium distinctio
+        voluptates, incidunt dolor aliquid provident, qui illum minima eligendi dicta enim totam ea quisquam possimus
+        nulla.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error commodi quia repellat laudantium distinctio
+        voluptates, incidunt dolor aliquid provident, qui illum minima eligendi dicta enim totam ea quisquam possimus
+        nulla.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error commodi quia repellat laudantium distinctio
+        voluptates, incidunt dolor aliquid provident, qui illum minima eligendi dicta enim totam ea quisquam possimus
+        nulla.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error commodi quia repellat laudantium distinctio
+        voluptates, incidunt dolor aliquid provident, qui illum minima eligendi dicta enim totam ea quisquam possimus
+        nulla.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error commodi quia repellat laudantium distinctio
+        voluptates, incidunt dolor aliquid provident, qui illum minima eligendi dicta enim totam ea quisquam possimus
+        nulla.</p>
+</body>
+
+</html>
