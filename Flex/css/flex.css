@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+section{
+    /* display: flex;
+    border: 2px solid ; */
+    /* height: 80vh;  */
+     /* align-content: center;
+   flex-wrap: wrap;
+    justify-content: center; */
+    /* 
+      4 or 5 child in parent element
+     align-items:sretch;
+     align-items:center;
+     align-items:flex-start;
+     align-items:flex-end;
+     align-items:normal;
+
+     *** we need to add the height (parent element)
+
+     multiple element child
+     problem is => childs are shrink inside the parent
+     solutions => 
+     align-content : baseline
+     align-content : normal
+     align-content : center
+     align-content : space-between
+     align-content : space-evenly
+     align-content : space-around
+     **** flex-wrap: wrap;
+    */
+     
+}
+
+/* section>div{
+    border: 2px double blue;
+    width: 200px;
+    height: 200px;
+}
+section>div>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} */
+
+section{
+    border:5px solid;
+    display: flex;
+    flex-direction: column-reverse;
+    flex-direction: row;
+    flex-direction: row-reverse;
+    
+}
+
+section>div{
+    border: 2px solid red;
+}
