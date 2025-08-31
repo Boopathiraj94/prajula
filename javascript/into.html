@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+    <!-- external js -->
+    <!-- <script src="js/script.js" ></script> -->
+</head>
+
+<body>
+    <h1>Javascript</h1>
+    <!-- way of js -->
+
+    <!-- 
+     3 ways
+     =======
+     1 . inline 
+     2. internal
+     3. external
+    
+    -->
+
+    <!-- inline -->
+    <button ondblclick="alert('Hi I am js')">Click Me</button>
+
+    <button onclick="print()">Print</button>
+
+    <!-- internal js -->
+    <script>
+        // alert("I am from Internal")
+        // babel
+        // outputs
+        /*document.writeln("Hi welcome to js")
+        document.write("Hi welcome to js") */
+
+
+        // console.log()
+        // console.log("I am from console")
+
+        // alert
+        // alert("I am Alert")
+
+        // print
+
+        // window.print()
+
+        // inputs
+        // prompt("Enter your Name?")
+
+        // confirm("Do you want to Delete this file?")
+
+        let n = 12345.6789;
+
+        console.log(n.toPrecision(2));  // "1.2e+4"   (2 significant digits)
+        console.log(n.toPrecision(5));  // "12346"    (5 significant digits, normal decimal)
+        console.log(n.toPrecision(8));  // "12345.679" (8 significant digits, normal decimal)
+        let num = 12345.6789;
+
+        console.log(num.toExponential(2)); // "1.23e+4"  -> Always scientific
+        console.log(num.toExponential(2));    
+        console.log(num.toExponential(5)); 
+        
+        let s = Symbol("sf")
+        console.log(s)
+
+
+    </script>
+
+
+</body>
+
+</html>
