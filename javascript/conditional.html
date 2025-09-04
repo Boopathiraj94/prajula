@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conditional Statement</title>
 </head>
+
 <body>
     <h1>Conditional Statement</h1>
 
@@ -27,6 +29,50 @@
     }
         exit
 
+ 
+
+  else..if ladder
+  multiple condition
+
+  if(condition){
+  }else if(condition){
+  }else if(condition){
+  }else if(condition){
+  }else{
+  }
+
+   nested if
+   ===========
+   username password
+
+   ======================
+
+   Switch statement
+   =================
+
+   Syntax (case => string , char ,number)
+   ==========
+
+    switch(expression / variable){
+
+        case "1":
+                block of code;
+                break;
+        case "2":
+                block of code;
+                break;
+        case "3":
+                block of code;
+                break;
+        ...
+
+        default:
+                block of code;
+                break;
+    
+    }
+
+
     -->
 
     <script>
@@ -40,17 +86,17 @@
 
         // ODD or EVEN
 
-        let num = prompt("Enter number?")
+        // let num = prompt("Enter number?")
         // debugger;
         //  0 => even , 1 => odd
         //  0 => false , 1 => true
         // let ans = num%2;
 
-        if(num%2){ // true
-            console.log("ODD")
-        }else{
-            console.log("EVEN")
-        }
+        // if(num%2){ // true
+        //     console.log("ODD")
+        // }else{
+        //     console.log("EVEN")
+        // }
 
         // if score 50 or above 50 , fifty
         // mark 35 or 35 above , pass , else fail
@@ -58,7 +104,74 @@
         // find the biggest number 
         // 18 and 18 above , adult else child
 
+        // let age =100;
+
+
+        // if (age >= 1 && age <= 12) {
+        //     console.log("child")
+        // } else if (age >= 13 && age <= 19) {
+        //     console.log("teeagers")
+        // } else if (age >= 20 && age <= 55) {
+        //     console.log("Adult")
+        // }
+        // else if (age > 55 && age <=100) {
+        //     console.log("seniors")
+        // }
+        // else if(age > 100){
+        //      console.log("invalid age")
+        // }
+        // else if(age < 0){
+        //      console.log("age can't be negative")
+        // }
+        // else {
+        //      console.log("age can't be zero")
+        // }
+
+        // let uname = "prajula"
+        // let pass = "prajula@123"
+  
+        // let username = prompt("enter your username?")
+        // let password = prompt("enter your password?")
+        // debugger;
+        // if (username === uname && password === pass) {
+        //     console.log("login success")
+        // } else {
+        //     if (password !== pass) {
+        //         console.log("incorrect password")
+        //     } else {
+        //         console.log("incorrect user name")
+        //     }
+
+        // }
+
+
+        let op = prompt("Enter your Option \n 1. add , \n 2. sub ,\n 3.mul, \n 4.div , \n");
+        debugger;
+        // op =  Number(op)
+// debugger;
+
+           let num1 = Number(prompt("Enter num1?"))
+           let num2 =  Number(prompt("Enter num2?"))
+
+        switch(op){
+            case "1":
+                console.log("addition:",num1+num2);
+                break;
+            case "2":
+                console.log("Sub:",num1-num2);
+                break;
+            case "3":
+                console.log("Mul:",num1*num2);
+                break;
+            case "4":
+                console.log("div:",num1/num2);
+                break;
+            default:
+                console.log("case not found")
+                break;
+        }
 
     </script>
 </body>
+
 </html>
